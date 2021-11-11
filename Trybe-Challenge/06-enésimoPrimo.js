@@ -13,7 +13,6 @@ function nth_prime(n) {
       primeArr.push(i);
     }
   }
-  console.log(primeArr);
 
   return primeArr[primeArr.length - 1];
 }
