@@ -6,8 +6,10 @@ function even_fibonacci_numbers(roof) {
     fiboArr.push(fiboArr[i - 3] + fiboArr[i - 2])
   }
 
+  console.log(fiboArr);
+
   for (let j = 0; j <= fiboArr.length; j++) {
-    if (fiboArr[j] < 100 && fiboArr[j] % 2 === 0) {
+    if (fiboArr[j] < roof && fiboArr[j] % 2 === 0) {
       sum = sum + fiboArr[j];
     }
   }
@@ -15,6 +17,6 @@ function even_fibonacci_numbers(roof) {
   return sum;
 }
 
-const roof = 0;
+const roof = 3000000;
 
 console.log(even_fibonacci_numbers(roof));
